@@ -48,21 +48,66 @@ body
 
 .front
 {   
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(background.PNG);
-    background-size: cover;
-    background-position: center;
+    text-align: center;
+    /* position: relative; */
+    color: white;
     margin-left: 0px;
     margin-top: 0px;
-    padding-top: 270px;
-    padding-bottom: 200px;
+}
+.author{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-section{
+.background{
+    width:100%;
+    height: 90%;
+    min-height: 90%;
+}
+.aboutsection{
+/* 
+    height: 60%;
+    min-height: 60%; */
+}
+.aboutheading{
+    text-align: center;
+    margin-top: 15px;
+    width:100%;
+    color: black;
+    font-weight: 300;
+    padding: 10px;
+    
+}
+.aboutcontent{
     display: flex;
 }
 .heading{
-    padding: 150px 50px 150px 50px;
-    background-color: lightslategray;
+    width: 30%;
+    align-items: center;
+}
+.profile{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    margin-left: 20%;
+}
+.profile:hover{
+    height: 250px;
+    width: 250px;
+    margin-left: 10%
+}
+.content{
+    color: black;
+    display: grid;
+
+    font-size: 17px;
+    line-height: 3;
+ 
+    word-spacing: 3;
+    list-style-position: inside;
+    margin-left: 50px;
 }
 h1
 {   font-size: 40px;
@@ -72,55 +117,75 @@ h1
 }
 header
 {    background-color: darkslategray;
-      height: 10%;
+      height: 75px;
     
 }
-/* .button
-{
-    margin-top: 30px;
-    margin-left: 440px;
-} */
-
-/* .btn
-{
-    border: 1px solid white;
-    padding: 10px 30px;
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: auto;
+    line-height: 2.5;
+    height: 400px;
+    width:  350px;
+    margin: 10px;
+    word-spacing: 3;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+  .logo{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin: 10px 0 10px 0;
+  }
+.internshiplogo{
+    height: 100px;
+    width: 100px;
+    margin: 10px 0 10px 37%;
+}
+.projectcard{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: auto;
+    line-height: 2.5;
+    height: 500px;
+    width:  400px;
+    margin: 10px;
+    word-spacing: 3;
+    font-family: arial;
+}
+.internshipcard{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: auto;
+    line-height: 2.5;
+    height: 640px;
+    width:  500px;
+    margin: 10px;
+    word-spacing: 3;
+    font-family: arial;
+}
+#customers {
+    list-style-position: inside;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #customers td, #customers th {
+    vertical-align: top;
+    border: 1px solid #ddd;
+    line-height: 1.5;
+    padding: 2px;
+  }
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
     color: white;
-    text-decoration: none;
-    margin-right: 5px;
-    font-size: 13px;
-    text-transform: uppercase;
-}
-.btn-one
-{
-    background-color: darkorange;
-    font-family: "Roboto", sans-serif;
-}
-
-.btn-two
-{
-    font-family: "Roboto", sans-serif;
-}
-
-
-.btn-two:hover
-{
-    background-color: darkorange;
-    transition: all 0.5s ease-in;
-    
-        
-}
-
-.logo img
-{
-    width: 150px;
-    height: auto;
-} */
-
-
-
-
-
+  }
 
 
 
