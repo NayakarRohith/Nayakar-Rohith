@@ -3,10 +3,10 @@
     <title>Nayakar Rohith</title>
     <link href="style.css" rel="stylesheet" type="text/css">
 </head> 
-<body>
+<body style="background-color: rgb(241, 238, 238)">
 
     
-    <header id="home"`>
+    <header id="home" >
         
         
     <div class="row">
@@ -22,7 +22,19 @@
     </ul>    
     </div>     
     </header>
-
+    <script>
+            let scroll_position = 0;
+            let scroll_direction;
+            
+            window.addEventListener('scroll', function(e){
+                scroll_direction = (document.body.getBoundingClientRect()).top > scroll_position ? 'up' : 'down';
+                scroll_position = (document.body.getBoundingClientRect()).top;
+                console.log(scroll_direction);
+                if (scroll_direction==up || scroll_direction==down){
+                    
+                }
+            });
+    </script>
      <div class="front" >
             <img class="background"  src="background.PNG">
             <div class="author" >
@@ -33,7 +45,7 @@
      </div>
      
   
-     <section class="aboutsection" id="about">
+     <section  class="aboutsection" id="about">
             <div class="aboutheading">
                 <h2>ABOUT</h2>
                 <hr/>
@@ -43,8 +55,8 @@
                     <img class="profile" src="img.PNG">
                 </div>
                 <div class="content">
-                    <ul style="font-size: 20px">
-                        <li > My name is Nayakar Rohith. I was born and raised in Miryalaguda, Telangana. I did BTech in BML Munjal University Computer Science Department  </li>
+                    <ul>
+                        <li > My name is Nayakar Rohith. I was born and raised in Miryalaguda, Telangana. I did BTech in BML Munjal University Computer Science Department.  </li>
                         <li>I like to work in a company that offers me a consistently positive atmosphere to learn new technologies that help me to enhance my skills and to use my skills in the best possible way for achieving company’s goals.</li>
                     </ul>
                 </div>
@@ -69,7 +81,7 @@
                     </div>
             </div>
             <div class="card">
-                        <img class="logo" style="height:90px;width:90px" src="narayana.PNG" >
+                        <img class="logo"  src="narayana.PNG" >
                         <div style="flex: none">
                                 <p style="margin:0px 10px 0px 10px"><b>Degree:</b>Intermediate</p>
                                 <p style="margin:0px 10px 0px 10px"><b>Stream:</b>MPC</p>                        
@@ -79,7 +91,7 @@
                             </div>
             </div>
             <div class="card">
-                            <img class="logo" src="bmu.PNG">
+                            <img class="kcs" src="kcs.PNG">
                             <div style="flex: none">
                                     <p style="margin:0px 10px 0px 10px"><b>Degree:</b>Ⅹth</p>
                                     <p style="margin:0px 10px 0px 10px"><b>School:</b>Kakatiya Concept School</p>
@@ -156,10 +168,10 @@
                     </div>
                     <table  id="customers">
                             <tr>
-                              <th>Technical languages:</th>
-                              <th>Software’s and Technologies:</th>
-                              <th>Operating Systems:</th>
-                              <th>Languages:</th>
+                              <th>TECHNICAL LANGUAGES:</th>
+                              <th>SOFTWARES and TECHNOLOGIES:</th>
+                              <th>OPERATING SYSTEMS:</th>
+                              <th>LANGUAGES:</th>
                             </tr>
                             <tr>
                                 <td><ul>
@@ -173,8 +185,8 @@
                                         <li>MYSQL.</li>
                                 </ul></td>
                                 <td><ul>
-                                    <li>Angular Js,</li>
-                                    <li>Node js,</li>
+                                    <li>Angular,</li>
+                                    <li>Node.js,</li>
                                     <li>Django Framework,</li>
                                     <li>Ionic Framework,</li>
                                     <li>Twilio API,</li>
@@ -198,8 +210,41 @@
                             </tr>
                           </table>
             </section>
-            <section>
-                
+            <section style="background-color: darkslategray;padding:1px" id="contact">
+                <div class="aboutheading" style="color: white">
+                    <h2>CONTACT</h2>
+                    <hr/>
+                </div>
+                <div >
+                    <div >
+                        <div style="text-align: center" >
+                            <img  class="contactcontactlogo" src="contact1.png">
+                            <hr style="width: 10%;margin: 0 0 0 45%"/>
+                        </div>
+                        <div class="contact">
+                            <div class="contactbox">
+                                    <img class="contactmaillogo" src="gmail.PNG">
+                                    <a style="margin-right:5px" >nayakarrohith302@gmail.com</a>
+                            </div>
+                            <div class="contactbox">
+                                    <img class="contactcontact1logo" src="contact.png">
+                                    <a style="margin-right:5px">+919492244033</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div >
+                        <div style="text-align: center">
+                                <img class="contactsociallogo" src="social.png">
+                                <hr style="width: 10%;margin: 0 0 0 45%"/>
+                        </div>
+                            <div class="contact">
+                                <a href="https://www.linkedin.com/in/nayakar-rohith-4a2248136"><img class="contactlinkedinlogo" src="linkedin.png"></a>
+                                <a href="https://m.facebook.com/nayakar.rohith"><img class="contactfacebooklogo" src="facebook.png"></a>
+                                <a href="https://mobile.twitter.com/Nayakar_rohith"><img class="contacttwitterlogo" src="twitter.png"></a>
+                                <a href="https://www.instagram.com/rohith_nayakar/"><img class="contactinstalogo" src="insta.PNG"></a>
+                            </div>
+                    </div>
+                </div>
             </section>
     
 </body>    
