@@ -50,7 +50,7 @@ body
 header
 {    background-color: darkslategray;
       height: 75px;
-      position: fixed;
+/*       position: fixed; */
       width:100%;
 }
 .sticky{
