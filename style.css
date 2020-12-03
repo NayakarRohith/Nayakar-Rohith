@@ -99,7 +99,7 @@ hr{
     width:100%;
     color: black;
     font-weight: 300;
-    padding: 10px;
+    padding: 10px 0;
     
 }
 .aboutcontent{
@@ -196,7 +196,7 @@ h1
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #4CAF50;
+    background-color: #0097da;
     color: white;
   }
   .contact{
@@ -312,7 +312,6 @@ h1
     position: relative;
     display: flex;
     justify-content: center;
-    width: 100%;
     padding: 20px;
     align-items: center;
     flex-wrap: wrap;
@@ -361,6 +360,7 @@ h1
     padding: 20px;
 }
 .Container .InternCard .InternContent p{
+    margin: 5px 0;
     color: #666;
 }
 .Container .InternCard:nth-child(1) .InternLogoCircle{
@@ -379,4 +379,47 @@ h2{
     color: white;
     padding-bottom: 14px
 }
+.SkillBox ul{
+    position: relative;
+    background: #fff;
 
+}
+/* .SkillBox ul:hover li{
+    opacity: 0.2;
+} */
+.SkillBox ul li{
+    list-style: none;
+    padding: 10px;
+    /* width: 100%; */
+    background: #fff;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s;
+}
+
+.SkillBox ul li:hover{
+    transform:  scale(1.1);
+    z-index: 100;
+    background: #25bcff;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+.SkillBox ul li span{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    background: #25bcff;
+    color: #fff;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    /* transform: translateY(-20px); */
+
+}
+.SkillBox ul li:hover span{
+    background: #fff;
+    color: #25bcff;
+}
